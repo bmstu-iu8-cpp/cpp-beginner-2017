@@ -26,3 +26,7 @@ add_executable(executable
 
 target_link_libraries(executable)
 ```
+
+## Полезные ссылки
+[Makefile для самых маленьких](https://habrahabr.ru/post/155201/)
+[Введение в CMake](https://habrahabr.ru/post/155467/)
