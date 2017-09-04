@@ -5,7 +5,7 @@ notifications:
 
 matrix:
   include:
-    - os: osx
+    - os: linux
       compiler: g++-5
       env: COMPILER=g++ -std=c++11
 
