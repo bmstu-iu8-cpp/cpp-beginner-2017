@@ -8,7 +8,7 @@
 1. Удалите строку `hello_world.cpp` в файле [CMakeLists.txt](CMakeLists.txt)
 1. Добавьте названия ваших .cpp файлов в секцию `add_executable`
 1. Необходимо разрешить доступ к вашему github репозиторию системе [travis-ci](https://travis-ci.org)
-1. Добавьте `Status Image` в файл README.md в вашем репозитории
+1. Добавьте `Status Image` в файл `README.md` в вашем репозитории
 
 ### Пример
 Пусть у вас в проекте есть несколько файлов: `stack.cpp`, `stack.h`, `main.cpp`. Содержимое **CMakeLists.txt** должно быть следующим:
@@ -30,5 +30,5 @@ target_link_libraries(executable)
 ```
 
 ## Полезные ссылки
-[Makefile для самых маленьких](https://habrahabr.ru/post/155201/)
-[Введение в CMake](https://habrahabr.ru/post/155467/)
+* [Makefile для самых маленьких](https://habrahabr.ru/post/155201/)
+* [Введение в CMake](https://habrahabr.ru/post/155467/)
