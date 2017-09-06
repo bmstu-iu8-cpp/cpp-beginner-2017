@@ -3,6 +3,7 @@
 Текущее состояние проекта: [![Build Status](https://travis-ci.org/drewxa/bmstu-programming-languages.svg?branch=travis-template)](https://travis-ci.org/drewxa/bmstu-programming-languages)
 
 1. Скопируйте в свой репозиторий файл [.travis.yml](.travis.yml)
+1. Скопируйте в свой репозиторий файл [cpplint.py](cpplint.py)
 1. Скопируйте в свой репозиторий файл [CMakeLists.txt](CMakeLists.txt)
 1. Удалите строку `hello_world.cpp` в файле [CMakeLists.txt](CMakeLists.txt)
 1. Добавьте названия ваших .cpp файлов в секцию `add_executable`
