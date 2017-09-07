@@ -1,0 +1,18 @@
+language: cpp
+
+notifications:
+  email: false
+
+matrix:
+  include:
+    - os: linux
+      compiler: g++-5
+      env: COMPILER=g++ -std=c++11
+
+script:
+  - cd lab1
+  - chmod 777 ./cpplint.py
+  - for file in $(find . -name "*.cpp"); do ./cpplint.py $file; done;
+  - mkdir build && cd build
+  - cmake .. && make
+#  - ./executable
