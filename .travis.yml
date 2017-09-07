@@ -11,7 +11,7 @@ matrix:
 
 script:
   - chmod 777 ./cpplint.py
-  - ./cpplint.py ./hello_world.cpp
+  - for file in $(find . -name "*.cpp"); do ./cpplint.py $file; done;
   - mkdir build && cd build
   - cmake .. && make
 #  - ./executable
