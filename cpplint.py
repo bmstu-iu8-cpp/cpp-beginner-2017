@@ -6123,7 +6123,7 @@ def ParseArguments(args):
 
 
 def main():
-  sys.argv[1:] = ['--filter=-,+build/include,-build/include_order,-build/include_what_you_use,-build/include_alpha,+build/storage_class,+readability/alt_tokens,+readability/braces,+readability/casting,+readability/inheritance,+runtime/casting,+runtime/explicit,+whitespace/blank_line,+whitespace/comma,+whitespace/comments,+whitespace/empty_conditional_body,+whitespace/empty_loop_body,+whitespace/end_of_line,+whitespace/ending_newline,+whitespace/forcolon,+whitespace/indent,+whitespace/line_length,+whitespace/newline,+whitespace/operators,+whitespace/parens,+whitespace/semicolon,+whitespace/tab', '--linelength=100', sys.argv[1]]
+  sys.argv[1:] = ['--filter=-,+build/include,-build/include_order,-build/include_what_you_use,-build/include_alpha,+build/storage_class,+readability/alt_tokens,+readability/braces,+readability/casting,+readability/inheritance,+runtime/casting,+runtime/explicit,+whitespace/blank_line,+whitespace/comma,+whitespace/comments,+whitespace/empty_conditional_body,+whitespace/empty_loop_body,+whitespace/end_of_line,+whitespace/ending_newline,+whitespace/forcolon,+whitespace/indent,+whitespace/line_length,+whitespace/operators,+whitespace/parens,+whitespace/semicolon,+whitespace/tab', '--linelength=100', sys.argv[1]]
   filenames = ParseArguments(sys.argv[1:])
 
   # Change stderr to write with replacement characters so we don't die
