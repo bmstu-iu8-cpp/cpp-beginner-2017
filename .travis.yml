@@ -10,9 +10,13 @@ matrix:
       env: COMPILER=g++ -std=c++11
 
 script:
-  - cd lab1
   - chmod 777 ./cpplint.py
-  - for file in $(find . -name "*.cpp"); do ./cpplint.py $file; done;
+  - for file in $(find ./lab1 -name "*.cpp"); do ./cpplint.py $file; done;
+  - for file in $(find ./lab2 -name "*.cpp"); do ./cpplint.py $file; done;
+  - cd lab1
+  - mkdir build && cd build
+  - cmake .. && make
+  - cd ../lab2
   - mkdir build && cd build
   - cmake .. && make
 #  - ./executable
