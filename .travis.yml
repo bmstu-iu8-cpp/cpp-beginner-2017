@@ -16,7 +16,7 @@ script:
   - cd lab1
   - mkdir build && cd build
   - cmake .. && make
-  - cd ../lab2
+  - cd ../../lab2
   - mkdir build && cd build
   - cmake .. && make
 #  - ./executable
