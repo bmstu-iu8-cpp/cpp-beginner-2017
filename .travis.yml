@@ -11,8 +11,8 @@ matrix:
 
 script:
   - chmod 777 ./cpplint.py
-  - for file in $(find ./lab1 -name "*.cpp"); do ./cpplint.py $file; done;
-  - for file in $(find ./lab2 -name "*.cpp"); do ./cpplint.py $file; done;
+  - ( for file in $(find ./lab1 -name "*.cpp"); do ./cpplint.py $file || exit; done );
+  - ( for file in $(find ./lab2 -name "*.cpp"); do ./cpplint.py $file || exit; done );
   - cd lab1
   - mkdir build && cd build
   - cmake .. && make
