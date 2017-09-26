@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -57,8 +58,8 @@ int main()
 
     // vector
     {
-        std::vector<float> v1 = {1.2, 2.5, 3.4, 6.1};
-        float summ = 0;
+        std::vector<double> v1 = {1.2, 2.5, 3.4, 6.1};
+        double summ = 0;
         for (int i = 0; i < v1.size(); ++i)
         {
             summ += v1[i];
