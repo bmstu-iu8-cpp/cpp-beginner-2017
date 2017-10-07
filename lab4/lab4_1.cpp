@@ -4,8 +4,8 @@
 
 struct Point2
 {
-    float x = 0;
-    float y = 0;
+    float x;
+    float y;
 };
 
 struct Student
@@ -24,7 +24,7 @@ struct Group
 int main()
 {
     {
-        Point2 point;
+        Point2 point = {0, 0};
         std::cout << point.x << ", " << point.y << std::endl;
         std::cin >> point.x >> point.y;
         std::cout << point.x << ", " << point.y << std::endl;
