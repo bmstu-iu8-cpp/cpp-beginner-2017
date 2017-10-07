@@ -77,8 +77,8 @@ int main()
         std::cout << "maximum is " << max(n, m) << std::endl;
 
         int l = 1234;
-        int m = max(10, l);
-        std::cout << "maximum is " << m << std::endl;
+        int d = max(10, l);
+        std::cout << "maximum is " << d << std::endl;
     }
 
     {
@@ -89,6 +89,30 @@ int main()
 
         std::cout << "x = " << x << std::endl;
         std::cout << "y = " << y << std::endl;
+    }
+
+    {
+        int x = 13;
+        int y = x;
+        y += 10;
+        std::cout << "x = " << x << std::endl;
+        std::cout << "y = " << x << std::endl;
+    }
+
+    {
+        int x = 13;
+        int& y = x;
+        y += 10;
+        std::cout << "x = " << x << std::endl;
+        std::cout << "y = " << x << std::endl;
+    }
+
+    {
+        int x = 13;
+        int& y = x;
+        x += 10;
+        std::cout << "x = " << x << std::endl;
+        std::cout << "y = " << x << std::endl;
     }
 
     {
