@@ -65,6 +65,58 @@ int main()
     }
 
     {
+        int x = 13;
+        int y = x;
+        y += 10;
+        std::cout << "x = " << x << std::endl;
+        std::cout << "y = " << x << std::endl;
+    }
+
+    {
+        int x = 13;
+        int& y = x;
+        y += 10;
+        std::cout << "x = " << x << std::endl;
+        std::cout << "y = " << x << std::endl;
+    }
+
+    {
+        int x = 13;
+        int& y = x;
+        x += 10;
+        std::cout << "x = " << x << std::endl;
+        std::cout << "y = " << x << std::endl;
+    }
+
+    {
+        Student anna = {
+            "Anna",
+            "Ivanova",
+            {4, 5, 5, 3}
+        };
+
+        Student& ref = anna;
+        ref.LastName = "Petrova";
+
+        std::cout << "anna: " << anna.LastName << std::endl;
+        std::cout << "ref: " << ref.LastName << std::endl;
+    }
+
+    {
+        Student anna = {
+            "Anna",
+            "Ivanova",
+            {4, 5, 5, 3}
+        };
+
+        const Student& ref = anna;
+        // ref.LastName = "Petrova"; // error!
+
+        std::cout << "anna: " << anna.LastName << std::endl;
+        std::cout << "ref: " << ref.LastName << std::endl;
+    }
+
+    {
         Group iu811 = {"iu8-11"};
 
         Student anna = {
@@ -84,16 +136,16 @@ int main()
 
         for (int i = 0; i < iu811.Students.size(); ++i)
         {
-            std::cout
+            std::cout << "student "
                 << iu811.Students[i].Name << " " << iu811.Students[i].LastName
-                << " studies in " << iu811.Name << std::endl;
+                << " is in the " << iu811.Name << std::endl;
         }
 
-        for (Student s : iu811.Students)
+        for (const Student& student : iu811.Students)
         {
-            std::cout
-                << s.Name << " " << s.LastName
-                << " studies in " << iu811.Name << std::endl;
+            std::cout << "student "
+                << student.Name << " " << student.LastName
+                << " is in the " << iu811.Name << std::endl;
         }
     }
 

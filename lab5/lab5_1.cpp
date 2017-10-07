@@ -93,30 +93,6 @@ int main()
 
     {
         int x = 13;
-        int y = x;
-        y += 10;
-        std::cout << "x = " << x << std::endl;
-        std::cout << "y = " << x << std::endl;
-    }
-
-    {
-        int x = 13;
-        int& y = x;
-        y += 10;
-        std::cout << "x = " << x << std::endl;
-        std::cout << "y = " << x << std::endl;
-    }
-
-    {
-        int x = 13;
-        int& y = x;
-        x += 10;
-        std::cout << "x = " << x << std::endl;
-        std::cout << "y = " << x << std::endl;
-    }
-
-    {
-        int x = 13;
         std::cout << "x = " << x << std::endl;
 
         exp1(x);
