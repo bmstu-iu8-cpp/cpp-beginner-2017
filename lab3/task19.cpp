@@ -7,7 +7,7 @@ using namespace std;
 // Реализуйте программу, в которую сначала вводится набор пар, состоящих из имени и значения,
 // например Joe 17 и Barbara 22. Для каждой пары занесите имя в вектор names,
 // а число — в вектор scores
-// (в соответствующие позиции, так что если names [7] =="Joe", то scores [7] ==17).
+// (в соответствующие позиции, так что если names[7] =="Joe", то scores[7] ==17).
 // Прекратите ввод, введя строку No more.
 // Убедитесь, что каждое имя уникально, и выведите сообщение об ошибке, если имя введено дважды
 // Выведите на печать все пары (имя, баллы) по одной в строке.
@@ -18,7 +18,7 @@ int main()
     const string second_stop_word = "more";
 
     vector<string> names;
-    vector<int> ratings;
+    vector<int> scores;
 
     // for (;;)
     while (true)
@@ -31,7 +31,7 @@ int main()
             break;
 
         names.push_back(input.first);
-        ratings.push_back(stoi(input.second));
+        scores.push_back(stoi(input.second));
     }
 
     bool is_unique = false;
@@ -58,9 +58,9 @@ int main()
     }
     else
     {
-        for (int i = 0; i < ratings.size(); ++i)
+        for (int i = 0; i < scores.size(); ++i)
         {
-            cout << names[i] << " " << ratings[i] << endl;
+            cout << names[i] << " " << scores[i] << endl;
         }
     }
     return 0;
