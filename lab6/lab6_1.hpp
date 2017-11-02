@@ -9,6 +9,7 @@ void testList07();
 void testMap01();
 void testMap02();
 void testMap03();
+void testMap04();
 
 void testVector01();
 void testVector02();

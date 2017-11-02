@@ -33,6 +33,15 @@ void testMap02()
 
 void testMap03()
 {
+    std::map<std::string, int> mp;
+    mp["One"] = 1;
+    mp["Two"] = 2;
+
+    std::cout << "Four is" << mp["Four"] << std::endl;
+}
+
+void testMap04()
+{
     std::map<std::string, int> mp =
     {
         {"One", 1},

@@ -17,6 +17,7 @@ int main()
     testMap01();
     testMap02();
     testMap03();
+    testMap04();
 
     testVector01();
     testVector02();
