@@ -18,6 +18,9 @@ script:
   - ( for file in $(find ./lab5 -name "*.cpp"); do ./cpplint.py $file || exit; done );
   - ( for file in $(find ./lab6 -name "*.cpp"); do ./cpplint.py $file || exit; done );
   - ( for file in $(find ./lab7 -name "*.cpp"); do ./cpplint.py $file || exit; done );
+  - ( for file in $(find ./lab8 -name "*.cpp"); do ./cpplint.py $file || exit; done );
+  - ( for file in $(find ./lab9 -name "*.cpp"); do ./cpplint.py $file || exit; done );
+  - ( for file in $(find ./lab10 -name "*.cpp"); do ./cpplint.py $file || exit; done );
   - cd lab1
   - mkdir build && cd build
   - cmake .. && make
@@ -43,6 +46,21 @@ script:
   - cmake .. && make
   - cd ../..
   - cd lab7
+  - mkdir build && cd build
+  - cmake .. && make
+  
+  - cd ../..
+  - cd lab8
+  - mkdir build && cd build
+  - cmake .. && make
+  
+  - cd ../..
+  - cd lab9
+  - mkdir build && cd build
+  - cmake .. && make
+  
+  - cd ../..
+  - cd lab10
   - mkdir build && cd build
   - cmake .. && make
 #  - ./executable
