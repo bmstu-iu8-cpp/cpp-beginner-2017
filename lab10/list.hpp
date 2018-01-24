@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstdlib>
+
 struct List
 {
     using value_type = int;
@@ -31,6 +33,6 @@ List::Node* insert(List* const list, List::Node* const where, const List::value_
 
 List::Node* erase(List* const list, List::Node* const where);
 
-std::size_t size(const List* const list);
+size_t size(const List* const list);
 
 void print(const List* const ls);
