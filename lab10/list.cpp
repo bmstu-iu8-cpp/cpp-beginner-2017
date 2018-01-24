@@ -95,9 +95,9 @@ List::Node* erase(List* const list, List::Node* const where)
     return next;
 }
 
-std::size_t size(const List* const list)
+size_t size(const List* const list)
 {
-    std::size_t size = 0;
+    size_t size = 0;
     List::Node* head = list->Head;
     while (head)
     {
