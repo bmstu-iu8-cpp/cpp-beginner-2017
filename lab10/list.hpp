@@ -31,6 +31,6 @@ List::Node* insert(List* const list, List::Node* const where, const List::value_
 
 List::Node* erase(List* const list, List::Node* const where);
 
-size_t size(const List* const list);
+std::size_t size(const List* const list);
 
 void print(const List* const ls);
