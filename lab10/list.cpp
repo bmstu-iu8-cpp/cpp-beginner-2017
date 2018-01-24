@@ -1,5 +1,7 @@
 #include "list.hpp"
 
+#include <iostream>
+
 List::Node* createNode(const List::value_type& data, List::Node* prev, List::Node* next)
 {
     List::Node* node = new List::Node();
